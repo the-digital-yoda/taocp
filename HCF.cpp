@@ -18,16 +18,17 @@
 		auto r = m % n;
 		if(r==0)
 			return n;
-		else
+		else{
 			m = n ;
-		n = r;
+			n = r;
+		}
 	}
 	return n;
 }
 int main(){
 	int hcf = HCF(25,20);
 	std::cout<<hcf<<std::endl;
-	hcf = HCF(30,40);
+	hcf = HCF(119,544);
 	std::cout<<hcf<<std::endl;
 	hcf = HCF(29,79);
 	std::cout<<hcf<<std::endl;
